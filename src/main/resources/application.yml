@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_db
+    username: bestuser
+    password: bestuser
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        hbm2ddl.auto: update
+
+  mvc:
+    hidden-method:
+      filter:
+        enabled: true
